@@ -7,20 +7,34 @@ export default function Works() {
     {
       id: "1",
       icon: "./assets/mobile.png",
-      title: "Web Design",
+      title: "Accessible Running Track",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      
+        <ul>
+          <li>This is a smartphone application to give people with visual impairments feedback on running track.</li>
+          <li>While a person walks, the app takes images of the track, processes them and determines the angle of the person.</li>
+          <li>Finally, it provides verbal feedback if the person is veering from the track.</li>
+          <li>The application was built upon an existing app using C# and OpenCV.</li>
+        </ul>,
+        
+      img1: "./assets/csharp.png",
+      img2: "./assets/opencv.png",
     },
     {
       id: "2",
       icon: "./assets/globe.png",
-      title: "Mobile Application",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      title: "GCN Distributed Training",
+      desc:           
+        <ul>
+          <li>The system trains Graph Convolutional Network (GCN) in multiple GPUs.</li>
+          <li>To maintain the accuracy, the system performs communication efficient sampling.</li>
+          <li>The system was evaluated with multiple datasets such as Reddit, Amazon, Ppi etc.</li>
+          <li>The system was implemented with Pytorch and Python.</li>
+        </ul>,
+      img1: "./assets/pytorch.png",
+      img2: "./assets/python.png",
+      
+  
     },
     {
       id: "3",
@@ -28,8 +42,8 @@ export default function Works() {
       title: "Branding",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+
+   
     },
   ];
 
@@ -40,7 +54,9 @@ export default function Works() {
   };
   
   return (
+    
     <div className="works" id="works">
+      {/* <h1>Projects</h1> */}
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -50,32 +66,34 @@ export default function Works() {
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
-                  <div className="imgContainer">
+                  {/* <div className="imgContainer">
                     <img src={d.icon} alt="" />
-                  </div>
-                  <h2>{d.title}</h2>
-                  <p>{d.desc}</p>
-                  <span>Projects</span>
+                  </div> */}
+                  <h3>{d.title}</h3>
+                  <span>{d.desc}</span>
+                  
+                  {/* <span>Projects</span> */}
                 </div>
               </div>
               <div className="right">
-                <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
-                  alt=""
-                />
+                {/* <h2>Technology Used</h2> */}
+                <br/>
+                <img src={d.img1} alt="" />
+                <img src={d.img2} alt="" />
+                
               </div>
             </div>
           </div>
         ))}
       </div>
       <img
-        src="assets/arrow.png"
+        src="assets/right-arrow-icon.jpg"
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
+        src="assets/right-arrow-icon.jpg"
         className="arrow right"
         alt=""
         onClick={() => handleClick()}

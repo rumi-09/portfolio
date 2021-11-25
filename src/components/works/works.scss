@@ -1,14 +1,15 @@
 @import "../../global.scss";
 
 .works {
-  background-color: crimson;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 
+
   .arrow {
-    height: 50px;
+    height: 120px;
     position: absolute;
     cursor: pointer;
 
@@ -48,11 +49,12 @@
       .item {
         width: 700px;
         height: 100%;
-        background-color: white;
-        border-radius: 20px;
+        background-color:plum;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
+
 
         @include mobile {
           width: 80%;
@@ -61,18 +63,34 @@
         }
 
         .left {
-          flex: 4;
+          background-color: white;
+          border-radius: 10%;
+          margin-left: 30px;
+          flex: 12;
           height: 80%;
           display: flex;
           align-items: center;
           justify-content: center;
 
+
           .leftContainer {
-            width: 90%;
-            height: 70%;
+            width: 95%;
+            // height: 25%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            
+            ul{
+              // display: flex;
+              // display: list-item;
+              margin-top: 10px;
+              margin-left: -20px;
+              list-style: square inside;
+              justify-content: center;
+              li{
+                margin-bottom: 5px;
+              }
+            }
 
             .imgContainer {
               width: 40px;
@@ -111,13 +129,14 @@
             }
             span {
               font-size: 12px;
-              font-weight: 600;
-              text-decoration: underline;
-              cursor: pointer;
+              font-weight: 500;
+              // text-decoration: underline;
+              // cursor: pointer;
             }
           }
         }
         .right {
+      
           flex: 8;
           height: 100%;
           display: flex;
@@ -126,7 +145,7 @@
           overflow: hidden;
 
           img {
-            width: 400px;
+            width: 150px;
             transform: rotate(-10deg);
           }
         }
