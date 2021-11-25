@@ -1,21 +1,30 @@
 @import "../../global.scss";
 
+
 .portfolio {
   background-color: white;
+  // //display: flex;
+  // //align-items: center;
+  // //justify-content: center;
+  position: relative;
+
   h1{
     font-size: 40px;
   }
 
+
   #leftbox {
-    margin-left: 10px;
+ 
     float:left; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     border-radius: 20%;
+    margin-left: 1%;
+    margin-right: 1%;
     background:darksalmon;
-    width:400px;
+    width:32%;
     height:280px;   
   }
   #middlebox{
@@ -24,26 +33,25 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
     border-radius: 20%;
-    float:left; 
+    float:right;
     background:lightslategray;
-    width:400px;
+    width:32%;
     height:280px;
   }
   #rightbox{
-    float:left; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     float:right;
     border-radius: 20%;
+    
     background:darkseagreen;
-    width:400px;
+    width:32%;
     height:280px;
-    margin-right: 10px;
-
   }
   h1{
     color:black;
@@ -67,4 +75,13 @@
       opacity: 0;
     }
   }
+
+  @media screen and (max-width: 500px) {
+  
+    #leftbox,
+    #middlebox,
+    #rightbox {
+        width: 70%;
+    }
+}
 }

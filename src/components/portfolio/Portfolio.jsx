@@ -10,6 +10,8 @@ import "./portfolio.scss";
 // } from "../../data";
 
 export default function Portfolio() {
+ 
+
 
 
   return (
@@ -17,7 +19,8 @@ export default function Portfolio() {
       <h1>Experiences</h1>
       <br/>
       <br/>
-      <div id = "leftbox">
+  
+      <div id = "leftbox" className="maindiv">
                 <h2>Application Developer </h2>
                 <h3>
                   [2022 - Present]<br/>
@@ -41,7 +44,7 @@ export default function Portfolio() {
                 <h3>
                   [2015 - 2018]<br/>
                   Department of Computer Science<br/>
-                  BRAC University & University of IT and Sciences, Bangladesh
+                  BRAC University & UITS, Bangladesh
                 </h3>
 
        

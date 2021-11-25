@@ -39,11 +39,17 @@ export default function Works() {
     {
       id: "3",
       icon: "./assets/writing.png",
-      title: "Branding",
+      title: "Mortality & Readmission Prediction",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-
-   
+        <ul>
+          <li>The system of two generative models for mortality and hospital readmission prediction.</li>
+          <li>Tested the models on Uiowa Healthcare data.</li>
+          <li>Wrote SQL query to retrieve necessary part of the data.</li>
+          <li>The system was implemented with Pytorch and Python.</li>
+        </ul>,
+  
+      img1: "./assets/python.png",
+      img2: "./assets/SQL.png",
     },
   ];
 
@@ -76,8 +82,7 @@ export default function Works() {
                 </div>
               </div>
               <div className="right">
-                {/* <h2>Technology Used</h2> */}
-                <br/>
+                {/* <h2>Technology Used</h2> */} 
                 <img src={d.img1} alt="" />
                 <img src={d.img2} alt="" />
                 
