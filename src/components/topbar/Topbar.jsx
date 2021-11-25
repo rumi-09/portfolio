@@ -7,12 +7,18 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            Masuma Akter Rumi
+            <img src="assets/toplogo.png" alt="" />
           </a>
-          <div className="itemContainer">
-            <Person className="icon" />
-            <span>+44 924 12 74</span>
-          </div>
+
+           <div className="itemContainer">
+            {/* <Person className="icon" /> */}
+            <span>          
+              <a href="https://www.linkedin.com/in/masuma-akter-rumi-10a382102/" 
+                  target="_blank" className="linkedin">
+                  <img src="assets/linkedin.png" alt="" />
+              </a>
+            </span>
+          </div> 
           <div className="itemContainer">
             <Mail className="icon" />
             <span>masumarumi09@gmail.com</span>

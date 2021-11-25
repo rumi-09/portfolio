@@ -21,11 +21,16 @@
       align-items: center;
 
       .logo {
-        font-size: 40px;
-        font-weight: 700;
-        text-decoration: none;
-        color: inherit;
-        margin-right: 40px;
+        display: flex;
+        max-height: 45 px;
+        max-width: 45px;
+        object-fit: cover;
+      }
+      .linkedin {
+        display: flex;
+        max-height: 60 px;
+        max-width: 60px;
+        object-fit: cover;
       }
 
       .itemContainer {

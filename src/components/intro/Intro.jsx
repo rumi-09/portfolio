@@ -16,7 +16,7 @@ export default function Intro() {
         <div className="wrapper">
           <h2>About Me</h2>
           <br/>
-          <span>I am Masuma Akter Rumi, 
+          <span>I am <b>Masuma Akter Rumi</b>, 
             working as an Application Developer in the College of Public Health 
             at the University of Iowa. I have completed my Master's from the Department 
             of Computer Science at the University of Iowa, USA. Previously, I completed my 

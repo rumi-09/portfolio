@@ -2,80 +2,69 @@
 
 .portfolio {
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  h1 {
-    font-size: 50px;
-
-    @include mobile{
-      font-size: 20px;
-    }
+  h1{
+    font-size: 40px;
   }
 
-  ul {
-    margin: 10px;
-    padding: 0;
-    list-style: none;
+  #leftbox {
+    margin-left: 10px;
+    float:left; 
     display: flex;
-
-    @include mobile{
-      margin: 10px 0;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-
-  .container {
-    width: 70%;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 20%;
+    background:darksalmon;
+    width:400px;
+    height:280px;   
+  }
+  #middlebox{
+    float:left; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30px;
+    border-radius: 20%;
+    float:left; 
+    background:lightslategray;
+    width:400px;
+    height:280px;
+  }
+  #rightbox{
+    float:left; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    float:right;
+    border-radius: 20%;
+    background:darkseagreen;
+    width:400px;
+    height:280px;
+    margin-right: 10px;
 
-    @include mobile{
-      width: 100%;
-    }
+  }
+  h1{
+    color:black;
 
-    .item {
-      width: 220px;
-      height: 150px;
-      border-radius: 20px;
-      border: 1px solid rgb(240, 239, 239);
-      margin: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      position: relative;
-      transition: all .5s ease;
-      cursor: pointer;
+    text-align:center;
+  }
 
-      @include mobile{
-        width: 130px;
-        height: 100px;
-      }
+  
+  .arrow {
+    // position: absolute;
+    // bottom: 10px;
+    // left: 40%;
+    margin-left: 900px;
+    margin-top: 50px;
+    width: 30px;
+    animation: arrowBlink 2s infinite;
+  }
 
-      h3 {
-        position: absolute;
-        font-size: 20px;
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-      }
-
-      &:hover {
-        background-color: $mainColor;
-        img {
-          opacity: 0.2;
-          z-index: 0;
-        }
-      }
+  @keyframes arrowBlink {
+    100% {
+      opacity: 0;
     }
   }
 }

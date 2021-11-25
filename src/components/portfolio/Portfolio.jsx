@@ -10,77 +10,47 @@ import {
 } from "../../data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
-  const [data, setData] = useState([]);
-  const list = [
-    {
-      id: "featured",
-      title: "Featured",
-    },
-    {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
-  ];
 
-  useEffect(() => {
-    switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
-      case "web":
-        setData(webPortfolio);
-        break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
-        break;
-      default:
-        setData(featuredPortfolio);
-    }
-  }, [selected]);
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
-      <ul>
-        {list.map((item) => (
-          <PortfolioList
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
-      </ul>
-      <div className="container">
-        {data.map((d) => (
-          <div className="item">
-            <img
-              src={d.img}
-              alt=""
-            />
-            <h3>{d.title}</h3>
-          </div>
-        ))}
+      <h1>Experiences</h1>
+      <br/>
+      <br/>
+      <div id = "leftbox">
+                <h2>Application Developer </h2>
+                <h3>
+                  [2022 - Present]<br/>
+                  College of Public Health<br/>
+                  The University of Iowa
+                </h3>
+               
+      </div> 
+              
+      <div id = "middlebox">
+                <h2>Graduate Research & Teaching Assistant</h2>
+                <h3>
+                  [2018 - 2021]<br/>
+                  Department of Computer Science<br/>
+                  The University of Iowa, USA
+                </h3>
+                
       </div>
+      <div id = "rightbox">
+                <h2>Teaching Instructor</h2>
+                <h3>
+                  [2015 - 2018]<br/>
+                  Department of Computer Science<br/>
+                  BRAC University & University of IT and Sciences, Bangladesh
+                </h3>
+
+       
+      </div>
+
+      <a href="#works">
+          <img src="assets/down.png" alt="" className="arrow"/>
+      </a>
+
     </div>
   );
 }
