@@ -16,13 +16,21 @@ export default function Intro() {
         <div className="wrapper">
           <h2>About Me</h2>
           <br/>
-          <span>I am <b>Masuma Akter Rumi</b>, 
+          {/* <span>I am <b>Masuma Akter Rumi</b>, 
             working as an Application Developer in the College of Public Health 
             at the University of Iowa. I have completed my Master's from the Department 
             of Computer Science at the University of Iowa, USA. Previously, I completed my 
             bachelor's from the Department of Computer Science and Engineering at
              Chittagong University of Engineering & Technology, Bangladesh.
 
+          </span> */}
+          <span>I am <b>Masuma Akter Rumi</b>, 
+          working as a Teaching Assistant in the Department of Computer Science 
+          at the University of Iowa. I will be graduating with a 
+          Master of Computer Science (MCS) from the University of Iowa, USA. 
+          Previously, I completed my bachelor's from the Department of 
+          Computer Science and Engineering at Chittagong University of 
+          Engineering & Technology, Bangladesh.
           </span>
           
        

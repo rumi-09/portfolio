@@ -20,32 +20,33 @@ export default function Portfolio() {
       <br/>
       <br/>
   
-      <div id = "leftbox" className="maindiv">
-                <h2>Application Developer </h2>
+      <div id = "leftbox" >
+                <h2>Graduate Teaching Assistant </h2>
                 <h3>
-                  [2022 - Present]<br/>
-                  College of Public Health<br/>
+                  [2020 - Present]<br/>
+                  Department of Computer Science<br/>
                   The University of Iowa
                 </h3>
                
       </div> 
               
       <div id = "middlebox">
-                <h2>Graduate Research & Teaching Assistant</h2>
-                <h3>
-                  [2018 - 2021]<br/>
-                  Department of Computer Science<br/>
-                  The University of Iowa, USA
-                </h3>
-                
-      </div>
-      <div id = "rightbox">
                 <h2>Teaching Instructor</h2>
                 <h3>
                   [2015 - 2018]<br/>
                   Department of Computer Science<br/>
                   BRAC University & UITS, Bangladesh
-                </h3>
+                </h3>             
+      </div>
+      <div id = "rightbox">
+
+
+                <h2>Graduate Research Assistant</h2>
+                <h3>
+                  [2018 - 2020]<br/>
+                  Department of Computer Science<br/>
+                  The University of Iowa, USA
+                </h3>  
 
        
       </div>

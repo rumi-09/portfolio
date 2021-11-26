@@ -62,19 +62,26 @@ export default function Works() {
   return (
     
     <div className="works" id="works">
-      {/* <h1>Projects</h1> */}
+      <h1>Projects</h1>
+      
+       
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
           <div className="container">
+            
             <div className="item">
+            
               <div className="left">
+                
                 <div className="leftContainer">
                   {/* <div className="imgContainer">
                     <img src={d.icon} alt="" />
                   </div> */}
+                 
+                  <br/> 
                   <h3>{d.title}</h3>
                   <span>{d.desc}</span>
                   
@@ -103,6 +110,10 @@ export default function Works() {
         alt=""
         onClick={() => handleClick()}
       />
+
+      <a href="#testimonials">
+          <img src="assets/down.png" alt="" className="downarrow"/>
+      </a>
     </div>
   );
 }

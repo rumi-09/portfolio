@@ -3,14 +3,26 @@
 
 .portfolio {
   background-color: white;
-  // //display: flex;
-  // //align-items: center;
-  // //justify-content: center;
+  //display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 
-  h1{
-    font-size: 40px;
+  @include mobile {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
   }
+
+ 
+    h1{
+      margin-left: 5%;
+      font-size: 40px;
+      @include mobile{
+        margin-left: 5%;
+        font-size: 20px;
+      }
+    }
 
 
   #leftbox {
@@ -26,6 +38,10 @@
     background:darksalmon;
     width:32%;
     height:280px;   
+    @include mobile{
+      width:32%;
+      height:180px;
+    }
   }
   #middlebox{
     float:left; 
@@ -40,18 +56,26 @@
     background:lightslategray;
     width:32%;
     height:280px;
+    @include mobile{
+      width:32%;
+      height:180px;
+    }
   }
   #rightbox{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    float:right;
+    //float:right;
     border-radius: 20%;
     
     background:darkseagreen;
     width:32%;
     height:280px;
+    @include mobile{
+      width:32%;
+      height:180px;
+    }
   }
   h1{
     color:black;
